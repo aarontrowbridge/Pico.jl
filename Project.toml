@@ -1,7 +1,7 @@
 name = "Pico"
 uuid = "c4671d76-df94-11ed-2057-43d4fd632fad"
 authors = ["Aaron Trowbridge <aaron.j.trowbridge@gmail.com> and contributors"]
-version = "0.1.1"
+version = "0.1.0"
 
 [deps]
 CairoMakie = "13f3f980-e62b-5c42-98c6-ff1f3baf88f0"
