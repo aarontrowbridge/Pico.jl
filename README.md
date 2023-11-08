@@ -1,7 +1,9 @@
-# Pico.jl
-A convenience meta-package for quantum optimal control using the Pade Integrator COllocation (PICO) method.
+<center>
+<img src="piccolo_logo.svg" alt="logo" width="400"/>
+</center>
 
 ## Description
+Piccolo.jl is a meta-package for quantum optimal control using the Pade Integrator COllocation (PICO) method.
 
 ### JuliCon 2033 Talk
 To see an overview of the PICO method and a demo of how to use this package, check out our recorded talk at JuliaCon 2023 [here](https://www.youtube.com/watch?v=NBdck6UX0Tc).
@@ -24,33 +26,32 @@ and this package reexports the following packages
 - [TrajectoryIndexingUtils.jl](https://github.com/aarontrowbridge/TrajectoryIndexingUtils.jl)
 
 ## Installation
-This package is registered! To install just run 
+This package is registered! To install enter the Julia REPL, type `]` to enter pkg mode, and then run 
 ```julia
-] add Pico
+pkg> add Piccolo
 ```
-in the REPL
 
 ## Local Development
 
 To develop locally, clone this repo and then instantiate the environment in the REPL by running first
 ```julia
-] activate .
+pkg> activate .
 ```
-And then, 
+and then, 
 ```julia
-] instantiate 
+pkg> instantiate 
 ```
 Both commands should be run in pkg mode, which is activated by typing `]` in the REPL.
 
 To start julia with the current environment, run
 ```bash
-julia --project=.
+julia --project
 ```
 from the Pico.jl directory.
 
 To run the scripts use, e.g.,
 ```bash
-julia -t <num_threads> --project=. examples/three_qubit_swap/swap.jl
+julia -t <num_threads> --project examples/three_qubit_swap/swap.jl
 ```
-where `<num_threads>` is the number of threads you want to use as QuantumCollocation.jl takes advantage of multithreading.  The `--project=.` flag is necessary to make sure the correct environment is loaded.
+where `<num_threads>` is the number of threads you want to use as QuantumCollocation.jl takes advantage of multithreading.  The `--project` flag is necessary to make sure the correct environment is loaded.
 
